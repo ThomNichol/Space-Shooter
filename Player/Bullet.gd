@@ -21,9 +21,9 @@ func _on_body_entered(body):
 		body.damage(damage)
 	Effects = get_node_or_null("/root/Game/Effects")
 	if Effects != null:
-		var Explosion = Explosion.instantiate()
-		Effects.add_child(Explosion)
-		Explosion.global_position = global_position
+		var explosion = Explosion.instantiate()
+		Effects.add_child(explosion)
+		explosion.global_position = global_position
 	queue_free()
 
 
