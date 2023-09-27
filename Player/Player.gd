@@ -54,5 +54,5 @@ func damage(d):
 		queue_free()
 
 func _on_area_2d_body_entered(body):
-	if body.name != "Player": 
+	if body.name != "Player":
 		damage(100)
