@@ -7,5 +7,5 @@ func _ready():
 
 func _physics_process(_delta):
 	move_and_slide()
-	position.x = wrapf(position.x, 0, 1152)
-	position.y = wrapf(position.y, 0, 648)
+	position.x = wrapf(position.x, 0, Global.VP.x)
+	position.y = wrapf(position.y, 0, Global.VP.y)
